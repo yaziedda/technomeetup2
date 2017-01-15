@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://localhost:3999/technomeetup2.slide#5 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Basic Programming and Database</title>
+    
+    <script>
+      var notesEnabled =  false ;
+    </script>
+    <script src="./technomeetup2_files/slides.js.download"></script>
+
+    
+
+    <script>
+      
+      if (window["location"] && window["location"]["hostname"] == "talks.golang.org") {
+        var _gaq = _gaq || [];
+        _gaq.push(["_setAccount", "UA-11222381-6"]);
+        _gaq.push(["b._setAccount", "UA-49880327-6"]);
+        window.trackPageview = function() {
+          _gaq.push(["_trackPageview", location.pathname+location.hash]);
+          _gaq.push(["b._trackPageview", location.pathname+location.hash]);
+        };
+        window.trackPageview();
+        window.trackEvent = function(category, action, opt_label, opt_value, opt_noninteraction) {
+          _gaq.push(["_trackEvent", category, action, opt_label, opt_value, opt_noninteraction]);
+          _gaq.push(["b._trackEvent", category, action, opt_label, opt_value, opt_noninteraction]);
+        };
+      }
+    </script>
+  <meta name="viewport" content="width=1100,height=750"><meta name="apple-mobile-web-app-capable" content="yes"></head>
+
+  <body style="display: none" class="loaded">
+
+    <section class="slides layout-widescreen">
+
+      <article>
+        <h1>Basic Programming and Database</h1>
+        <h3>Techno Meetup 2</h3>
+        <h3>27 January 2017</h3>
+        
+          <div class="presenter">
+            
+  
+  <p>
+    Divisi Pendidikan &amp; RISTEK HIMATIF
+  </p>
+  
+
+  
+  <p>
+    Yazied DA
+  </p>
+  
+
+          </div>
+        
+      </article>
+
+  
+  
+      <article>
+      
+        <h3>Topik yang akan di bahas</h3>
+        
+  <ul>
+  
+    <li>Apa itu pemograman?</li>
+  
+    <li>Pengenalan dasar di bahasa pemograman</li>
+  
+    <li>Pengenalan Database</li>
+  
+  </ul>
+
+      
+      </article>
+  
+  
+  
+      <article class="far-past">
+      
+        <h3>Apa itu pemograman?</h3>
+        
+  
+  <p>
+    Pemograman adalah proses menulis,menguji dan memperbaiki ( debug ), dan memelihara kode yang membangun sebuah program komputer.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article class="past">
+      
+        <h3>Bagaimana menulis dan membuat program?</h3>
+        
+  <ul>
+  
+    <li>Text Editor</li>
+  
+    <li>Compiler</li>
+  
+  </ul>
+
+      
+      </article>
+  
+  
+  
+      <article class="current">
+      
+        <h3>Compiler </h3>
+        
+  
+  <p>
+    Compiler adalah compiler / kompilator adalah adalah sebuah program komputer yang berguna untuk menerjemahkan program komputer yang ditulis dalam bahasa pemrograman tertentu menjadi program yang ditulis dalam bahasa pemrograman lain.
+  </p>
+  
+
+  
+  <p>
+    Arsitektur kompilator modern biasanya bukan lagi merupakan program tunggal namun merupakan rangkaian komunikasi antar program dengan tugas spesifik masing-masing. Program-program tersebut beserta tugasnya secara umum terdiri dari:
+  </p>
+  
+
+  <ul>
+  
+    <li>Kompilator itu sendiri, yang menerima kode sumber dan menghasilkan bahasa tingkat rendah (assembly)</li>
+  
+    <li>Assembler, yang menerima keluaran kompilator dan menghasilkan berkas objek dalam bahasa mesin</li>
+  
+    <li>Linker, yang menerima berkas objek keluaran assembler untuk kemudian digabungkan dengan pustaka-pustaka yang diperlukan dan menghasilkan program yang dapat dieksekusi (executable)</li>
+  
+  </ul>
+
+      
+      </article>
+  
+  
+  
+      <article class="next">
+      
+        <h3>Compiler</h3>
+        
+<div class="image">
+  <img src="./technomeetup2_files/compiler.png" height="500">
+</div>
+
+      
+      </article>
+  
+  
+  
+      <article class="far-next">
+      
+        <h3>Pengenalan bahasa pemograman</h3>
+        
+  
+  <p>
+    Point untuk cepat mempelajari bahasa pemograman :
+  </p>
+  
+
+  <ul>
+  
+    <li>Algoritma</li>
+  
+    <li>Print</li>
+  
+    <li>Type Data</li>
+  
+    <li>Statement</li>
+  
+    <li>Loop</li>
+  
+    <li>Array</li>
+  
+  </ul>
+
+      
+      </article>
+  
+  
+  
+      <article class="">
+      
+        <h3>Algoritma</h3>
+        
+  
+  <p>
+    Algoritma adalah suatu urutan dari beberapa langkah yang logis guna menyelesaikan masalah.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Print</h3>
+        
+  
+  <p>
+    php :
+  </p>
+  
+
+  
+  <div class="code"><pre>echo "Hello world";</pre></div>
+  
+
+  
+  <p>
+    c++ :
+  </p>
+  
+
+  
+  <div class="code"><pre>cout &lt;&lt; "Hello world";</pre></div>
+  
+
+  
+  <p>
+    phyton :
+  </p>
+  
+
+  
+  <div class="code"><pre>print("Hello world")</pre></div>
+  
+
+  
+  <p>
+    java :
+  </p>
+  
+
+  
+  <div class="code"><pre>System.out.println("Hello world");</pre></div>
+  
+
+  
+  <p>
+    go :
+  </p>
+  
+
+  
+  <div class="code"><pre>fmt.Println("Hello world")</pre></div>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Type Data</h3>
+        
+  
+  <p>
+    Type Data adalah jenis nilai yang dapat ditampung oleh suatu variabel
+  </p>
+  
+
+  
+  <p>
+    Jenis Type Data yang umum :
+  </p>
+  
+
+  <ul>
+  
+    <li>Integer ( Angka )</li>
+  
+    <li>String ( Huruf atau karakter )</li>
+  
+    <li>Boolean ( Pernyataan benar atau salah )</li>
+  
+  </ul>
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Definisi Type Data </h3>
+        
+  
+  <p>
+    PHP
+  </p>
+  
+
+  
+  <div class="code"><pre>$angka = 123;
+$huruf = "huruf";
+$pernyataan = false;</pre></div>
+  
+
+  
+  <p>
+    C++
+  </p>
+  
+
+  
+  <div class="code"><pre>int angka = 123;
+string huruf = "ini huruf";
+bool pernyataan = false;</pre></div>
+  
+
+  
+  <p>
+    Phyton
+  </p>
+  
+
+  
+  <div class="code"><pre>angka = 123
+huruf = "ini huruf"
+pernyataan = false</pre></div>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Definisi Type Data </h3>
+        
+  
+  <p>
+    Java
+  </p>
+  
+
+  
+  <div class="code"><pre>int angka = 123;
+String huruf = "ini huruf";
+boolean pernyataan = false;
+
+int angka;
+String huruf;
+boolean pernyataan;
+
+angka = 123;
+huruf = "ini huruf";
+pernyataan = true;</pre></div>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Definisi Type Data </h3>
+        
+  
+  <p>
+    GO
+  </p>
+  
+
+  
+  <div class="code"><pre>angka := 123
+huruf := "Ini huruf"
+pernyataan := false
+
+var angka int64
+var huruf string
+var pernyataan bool
+
+angka = 123
+huruf = "ini huruf"
+pernyataan = false</pre></div>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h2>Statement</h2>
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Defisni</h3>
+        
+  
+  <p>
+    Statement adalah <b>tanggapan</b> <b>terhadap</b> <b>pernyataan</b>
+  </p>
+  
+
+  
+  <p>
+    Jenis - jenisnya :
+  </p>
+  
+
+  <ul>
+  
+    <li>IF ELSE</li>
+  
+    <li>SWITCH CASE</li>
+  
+  </ul>
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h2>IF ELSE</h2>
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>IF ELSE</h3>
+        
+  
+  <p>
+    PHP
+  </p>
+  
+
+  
+  <div class="code"><pre>$angka = 1;
+
+if($angka == 1){
+    do action
+}else{
+    do action
+}
+
+if($angka == 1){
+    do action
+}else if($angka == 2){
+    do action
+}else{
+    do action
+}</pre></div>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>IF ELSE</h3>
+        
+  
+  <p>
+    C++
+  </p>
+  
+
+  
+  <div class="code"><pre>int angka = 1;
+
+if(angka == 1){
+    do action
+}else{
+    do action
+}
+
+if(angka == 1){
+    do action
+}else if(angka == 2){
+    do action
+}else{
+    do action
+}</pre></div>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>IF ELSE</h3>
+        
+  
+  <p>
+    Phyton
+  </p>
+  
+
+  
+  <div class="code"><pre>angka = 1
+
+if angka == 1:
+    do action
+else:
+    do action
+
+if angka == 1:
+    do action
+elif angka == 2:
+    do action
+elif angka == 3:
+    do action</pre></div>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>IF ELSE</h3>
+        
+  
+  <p>
+    Java
+  </p>
+  
+
+  
+  <div class="code"><pre>int angka = 1;
+
+if(angka == 1){
+    do action
+}else{
+    do action
+}
+
+if(angka == 1){
+    do action
+}else if(angka == 2){
+    do action
+}else{
+    do action
+}</pre></div>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>IF ELSE</h3>
+        
+  
+  <p>
+    GO
+  </p>
+  
+
+  
+  <div class="code"><pre>angka := 1
+
+if angka == 1 {
+    do action
+}else {
+    do action
+}
+
+if angka == 1 {
+    do action
+}else if angka == 2{
+    do action
+}else {
+    do action
+}</pre></div>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h2>SWITCH CASE</h2>
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>SWITCH CASE</h3>
+        
+  
+  <p>
+    PHP
+  </p>
+  
+
+  
+  <div class="code"><pre>$angka = 1;
+
+switch ($angka){
+    case 1:
+        do action
+        break;
+    case 2:
+        do action
+        break;
+    default:
+        do action
+        break;
+}</pre></div>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>SWITCH CASE</h3>
+        
+  
+  <p>
+    C++
+  </p>
+  
+
+  
+  <div class="code"><pre>int angka = 1;
+
+switch (angka){
+    case 1:
+        do action
+        break;
+    case 2:
+        do action
+        break;
+    default:
+        do action
+        break;
+}</pre></div>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>SWITCH CASE</h3>
+        
+  
+  <p>
+    Phyton
+  </p>
+  
+
+  
+  <p>
+    Doesn't have switch case
+  </p>
+  
+
+  
+  <p>
+    The official answer says, "You can do this easily enough with a sequence of if... elif... elif... else". And that you can use dictionary mapping for functions and dispatch methods for classes.
+  </p>
+  
+
+  
+  <div class="code"><pre>def numbers_to_strings(argument):
+    
+    switcher = {
+        0: "zero",
+        1: "one",
+        2: "two",
+    }
+
+    return switcher.get(argument, "nothing")</pre></div>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>SWITCH CASE</h3>
+        
+  
+  <p>
+    Java
+  </p>
+  
+
+  
+  <div class="code"><pre>int angka = 1;
+
+switch (angka){
+    case 1:
+        do action
+        break;
+    case 2:
+        do action
+        break;
+    default:
+        do action
+        break;
+}</pre></div>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>SWITCH CASE</h3>
+        
+  
+  <p>
+    GO
+  </p>
+  
+
+  
+  <div class="code"><pre>angka := 1
+
+switch angka {
+    case 1:
+        do action
+        break;
+    case 2:
+        do action
+        break;
+    default:
+        do action
+        break;
+}</pre></div>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h2>Looping</h2>
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Looping </h3>
+        
+  
+  <p>
+    Macam-macam looping
+  </p>
+  
+
+  <ul>
+  
+    <li>while</li>
+  
+    <li>do...while</li>
+  
+    <li>for</li>
+  
+    <li>foreach</li>
+  
+  </ul>
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Looping</h3>
+        
+  
+  <p>
+    PHP
+  </p>
+  
+
+  
+  <div class="code"><pre>for ($i = 0; $i &lt;= 10; $i++) {
+    echo "nomor ke : $i &lt;br&gt;";
+}</pre></div>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Looping</h3>
+        
+  
+  <p>
+    C++
+  </p>
+  
+
+  
+  <div class="code"><pre>for( int a = 0; a &lt; 10; a = a + 1 ) {
+    cout &lt;&lt; "nomor ke : " &lt;&lt; a &lt;&lt; endl;
+}</pre></div>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Looping</h3>
+        
+  
+  <p>
+    Phyton
+  </p>
+  
+
+  
+  <div class="code"><pre>for i in range(0, 3):
+    print "nomor ke %d" % (i)</pre></div>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Looping</h3>
+        
+  
+  <p>
+    Java
+  </p>
+  
+
+  
+  <div class="code"><pre>for(int i=0; i &lt; 10; i++){
+    System.out.println("nomor ke "+i)
+}</pre></div>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Looping</h3>
+        
+  
+  <p>
+    GO
+  </p>
+  
+
+  
+  <div class="code"><pre>for i := 0; i &lt; 10; i++ {
+    fmt.Println("nomor ke ", i)
+}</pre></div>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h2>Array</h2>
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Array</h3>
+        
+  
+  <p>
+    PHP
+  </p>
+  
+
+  
+  <div class="code"><pre>$data = array("mobil", "motor", "sepeda");
+
+for ($i = 0; $i &lt;= count($data); $i++) {
+    echo "data kita : $data[$i] &lt;br&gt;";
+}</pre></div>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Array</h3>
+        
+  
+  <p>
+    C++
+  </p>
+  
+
+  
+  <div class="code"><pre>string data[3] = {"data 1", "data 2", "data 3"};
+
+for( int a = 0; a &lt; 3; a = a + 1 ) {
+    cout &lt;&lt; "data ke : " &lt;&lt; data[a]&lt;&lt; endl;
+}</pre></div>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Array</h3>
+        
+  
+  <p>
+    Phyton
+  </p>
+  
+
+  
+  <div class="code"><pre>data = ['data 1', 'data 2', 'data 3']
+
+for data in data:
+    print "data ke :  %s" % data</pre></div>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Array</h3>
+        
+  
+  <p>
+    Java
+  </p>
+  
+
+  
+  <div class="code"><pre>String[] datanya = {"data 1", "data 2", "data 3"};
+
+for(int i=0; i &lt; datanya.length; i++){
+    System.out.println("cetak data ke "+datanya[i])
+}</pre></div>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Array</h3>
+        
+  
+  <p>
+    GO
+  </p>
+  
+
+  
+  <div class="code"><pre>data := [...]string{"data","data 2","data 3"}
+
+for i := 0; i &lt; len(data); i++ {
+    fmt.Println("datanya ", data[i])
+}</pre></div>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Trend</h3>
+        
+<div class="image">
+  <img src="./technomeetup2_files/trend.jpg" height="500">
+</div>
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h2>Database</h2>
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Database</h3>
+        
+  
+  <p>
+    Database adalah kumpulan informasi yang disimpan di dalam komputer secara sistematik sehingga dapat diperiksa menggunakan suatu program komputer untuk memperoleh informasi dari basis data tersebut.
+  </p>
+  
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Database</h3>
+        
+  
+  <p>
+    Saat ini database di bagi menjadi 2, SQL dan NoSQL :
+  </p>
+  
+
+<div class="image">
+  <img src="./technomeetup2_files/sqlvnosql.png" height="500">
+</div>
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Database yang umum di gunakan</h3>
+        
+  
+  <p>
+    SQL Family
+  </p>
+  
+
+<div class="image">
+  <img src="./technomeetup2_files/sql.jpg" height="300">
+</div>
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Database baru : NoSQL</h3>
+        
+<div class="image">
+  <img src="./technomeetup2_files/nosql.png" height="500">
+</div>
+
+      
+      </article>
+  
+  
+  
+      <article>
+      
+        <h3>Presentation and Project</h3>
+        
+  <ul>
+  
+    <li><a href="http://go-talks.appspot.com/github.com/yaziedda/ubptechnoday/technomeetup2.slide" target="_blank">go-talks.appspot.com/github.com/yaziedda/ubptechnoday/technomeetup2.slide</a></li>
+  
+  </ul>
+
+      
+      </article>
+  
+  
+
+      <article>
+        <h3>Thank you</h3>
+        
+          <div class="presenter">
+            
+  
+  <p>
+    Divisi Pendidikan &amp; RISTEK HIMATIF
+  </p>
+  
+
+  
+  <p>
+    Yazied DA
+  </p>
+  
+
+          </div>
+        
+      </article>
+
+    <div class="slide-area" id="prev-slide-area"></div><div class="slide-area" id="next-slide-area"></div></section>
+
+    <div id="help" style="display: none;">
+      Use the left and right arrow keys or click the left and right
+      edges of the page to navigate between slides.<br>
+      (Press 'H' or navigate to hide this message.)
+    </div>
+
+    
+    <script src="./technomeetup2_files/play.js.download"></script>
+    
+
+    <script>
+      (function() {
+        
+        if (window["location"] && window["location"]["hostname"] == "talks.golang.org") {
+          var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;
+          ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+          var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);
+        }
+      })();
+    </script>
+  
+
+<link rel="stylesheet" type="text/css" href="./technomeetup2_files/css"><link rel="stylesheet" type="text/css" href="./technomeetup2_files/styles.css"></body></html>
